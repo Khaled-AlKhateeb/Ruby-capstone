@@ -162,11 +162,10 @@ Example command:
 - Twitter: [@John_Web_Dev](https://twitter.com/John_Web_Dev)
 - LinkedIn: [johnmutisya](https://www.linkedin.com/in/johnmutisya/)
 
-👤 **Author3**
+👤 **Gilbert Okonjo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@GilbertOkonjo](https://github.com/OpondoG)
+- LinkedIn: [@GilbertOkonjo](https://www.linkedin.com/in/gilbert-okonjo/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

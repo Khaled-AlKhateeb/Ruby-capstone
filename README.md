@@ -60,58 +60,32 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Ruby Capstone] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**[Ruby Capstone]** is console app built using ruby, the app will help you to keep a record of different types of things you own: books, music albums, movies, and games, the data stored in json file, and it will be always useable whenever you start the app.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+- The app built using [Ruby](https://www.ruby-lang.org/en/).
+- The **schema** file built using **SQL**.
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+The app help you to keep recods about any items you own, thing like
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Store and Display Games]**
+- **[Store and Display Music Albums]**
+- **[Store and Display Books]**
+- **[Store and Display Movies]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+## Video Description <a name="vd-disc"></a>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+In this recorder video we are describing how we built this amazing project as a team.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,83 +93,55 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- Ruby should be installed in your local machine
+- You need a Terminal.
+- You need a code editor eg: `VsCode`
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/Khaled-AlKhateeb/Ruby-capstone.git
 ```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
 Example command:
 
 ```sh
-  cd my-project
-  gem install
+  cd Ruby-Capstone
+  bundle install
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
 Example command:
 
 ```sh
-  rails server
+  ruby main.rb
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
 Example command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  rspec spec
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,11 +151,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Khaled Al-Khateeb**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Khaled-AlKhateeb](https://github.com/Khaled-AlKhateeb)
+- Twitter: [@KhaledA93751489](https://twitter.com/KhaledA93751489)
+- LinkedIn: [khaled-al-khateeb](https://www.linkedin.com/in/khaled-al-khateeb-3a1013247/)
 
 👤 **Author2**
 
@@ -223,11 +169,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Searching Functionality for a specific item]**
+- [ ] **[Provide a simple way for the user to choose from a list of options]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,8 +188,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -255,27 +196,13 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 

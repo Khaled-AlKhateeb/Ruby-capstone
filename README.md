@@ -67,6 +67,7 @@ After you're finished please remove all the comments and instructions!
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+
 - The app built using [Ruby](https://www.ruby-lang.org/en/).
 - The **schema** file built using **SQL**.
 
@@ -149,15 +150,19 @@ Example command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Khaled Al-Khateeb**
 
 - GitHub: [@Khaled-AlKhateeb](https://github.com/Khaled-AlKhateeb)
 - Twitter: [@KhaledA93751489](https://twitter.com/KhaledA93751489)
 - LinkedIn: [khaled-al-khateeb](https://www.linkedin.com/in/khaled-al-khateeb-3a1013247/)
 
-👤 **Author2**
+👤 **John Mutisya**
+
+- GitHub: [@githubhandle](https://github.com/johnkioko)
+- Twitter: [@twitterhandle](https://twitter.com/John_Web_Dev)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/johnmutisya/)
+
+👤 **Author3**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)

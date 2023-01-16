@@ -158,9 +158,9 @@ Example command:
 
 👤 **John Mutisya**
 
-- GitHub: [@githubhandle](https://github.com/johnkioko)
-- Twitter: [@twitterhandle](https://twitter.com/John_Web_Dev)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/johnmutisya/)
+- GitHub: [@johnkioko](https://github.com/johnkioko)
+- Twitter: [@John_Web_Dev](https://twitter.com/John_Web_Dev)
+- LinkedIn: [johnmutisya](https://www.linkedin.com/in/johnmutisya/)
 
 👤 **Author3**
 

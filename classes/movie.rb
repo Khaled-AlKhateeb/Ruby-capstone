@@ -1,9 +1,8 @@
 require_relative './item'
-
 class Movie < Item
   attr_reader :silent
 
-  def initiliaze(publish_date, silent: false)
+  def initialize(publish_date, silent: false)
     super(publish_date)
     @silent = silent
   end

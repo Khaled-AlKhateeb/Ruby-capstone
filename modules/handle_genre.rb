@@ -33,6 +33,6 @@ module HandleGenre
   private
 
   def create_genre_instance(genres)
-    genres.map { |genre| Genre.new(genre['name']) }
-  end
+    genres.map { |genre| Genre.new(genre['name']) }
+  end
 end

@@ -43,7 +43,7 @@ class App
 
   def user_input(msg_to_user)
     print msg_to_user
-      gets.chomp
+    gets.chomp
   end
 
   def create_an_item(item)

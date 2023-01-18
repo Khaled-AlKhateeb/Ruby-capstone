@@ -42,10 +42,6 @@ class App
     puts 'Music album added Successfully'
   end
 
-  def add_movie
-    puts 'Movie added Successfully'
-  end
-
   def add_game
     puts 'Game added Successfully'
   end

@@ -1,10 +1,21 @@
+require_relative './classes/author'
+require_relative './classes/genre'
+require_relative './classes/label'
+require_relative './classes/source'
+require_relative './classes/music_album'
+require_relative './modules/handle_music_album'
+require_relative './modules/handle_genre'
+
 class App
+  include HandleMusicAlbums
+  include HandleGenre
+
   def initialize
     @books = []
-    @music_albums = []
+    @music_albums = load_music_albums
     @movies = []
     @games = []
-    @genres = []
+    @genres = load_genres
     @labels = []
     @sources = []
     @authors = []
@@ -27,52 +38,70 @@ class App
     10. Add a music album \n
     11. Add a movie \n
     12. Add a game \n
-    00. Exit"
+    0. Exit"
   end
 
-  def user_input()
-    gets.chomp.to_i
+  def user_input(msg_to_user)
+    print msg_to_user
+    gets.chomp
   end
 
-  def add_book
-    puts 'Book added Successfully'
-  end
+  def create_an_item(item)
+    label_title = user_input("Enter item label title (e.g. 'Gift', 'New'): ")
+    label_color = user_input('Enter item label color: ')
 
-  def add_music_album
-    puts 'Music album added Successfully'
-  end
+    author_first_name = user_input('Author first name: ')
+    author_last_name = user_input('Author last name: ')
 
-  def add_game
-    puts 'Game added Successfully'
+    genre_name = user_input("Item genre (e.g 'Horror', 'History'): ")
+
+    sourcer_name = user_input("Item source (e.g. 'Wikipedia', 'Google'): ")
+
+    # Creat the needed classes
+    label = Label.new(label_title, label_color)
+    item.add_label(label)
+    @labels << label unless @labels.include?(label)
+
+    author = Author.new(author_first_name, author_last_name)
+    item.add_author(author)
+    @authors << author unless @authors.include?(author)
+
+    genre = Genre.new(genre_name)
+    item.add_genre(genre)
+    @genres << genre unless @genres.include?(genre)
+
+    source = Source.new(sourcer_name)
+    item.add_source(source)
+    @sources << source unless @sources.include?(source)
   end
 
   def selected_option(options)
     case options
-    when 1
-      puts 'List all books'
-    when 2
-      puts 'List all music albums'
-    when 3
+    when '1'
+      puts list_books
+    when '2'
+      puts list_all_music_albums
+    when '3'
       puts 'List all movies'
-    when 4
+    when '4'
       puts 'List all games'
-    when 5
-      puts 'List all genres'
-    when 6
+    when '5'
+      puts list_all_genre
+    when '6'
       puts 'List all labels'
-    when 7
+    when '7'
       puts 'List all sources'
-    when 8
+    when '8'
       puts 'List all authors'
-    when 9
+    when '9'
       add_book
-    when 10
+    when '10'
       add_music_album
-    when 11
+    when '11'
       add_movie
-    when 12
+    when '12'
       add_game
-    when 0o0
+    when '0'
       puts 'Goodbye'
     else
       puts 'Invalid option'

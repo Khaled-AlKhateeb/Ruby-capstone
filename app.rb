@@ -1,4 +1,9 @@
+require_relative './modules/handle_author'
+require_relative './modules/handle_game'
+require_relative './modules/handle_movies'
+require_relative './modules/handle_source'
 require_relative './classes/label'
+require_relative './classes/genre'
 require_relative './classes/author'
 require_relative './classes/source'
 require_relative './modules/handle_books'
@@ -6,6 +11,7 @@ require_relative './modules/handle_labels'
 require_relative './classes/music_album'
 require_relative './modules/handle_music_album'
 require_relative './modules/handle_genre'
+
 class App
   include HandleBooks
   include HandleLabels
@@ -13,16 +19,18 @@ class App
   include HandleGame
   include HandleMusicAlbums
   include HandleGenre
+  include HandleMovie
+  include HandleSource
 
   def initialize
     @books = load_books
     @music_albums = load_music_albums
-    @movies = []
+    @movies = load_movies
     @games = load_games
     @genres = load_genres
     @labels = load_labels
     @curr_labels = []
-    @sources = []
+    @sources = load_source
     @authors = load_authors
     @current_authors = []
   end
@@ -78,8 +86,7 @@ class App
     @genres << genre unless @genres.include?(genre)
 
     source = Source.new(sourcer_name)
-    item.add_source(source)
-    @sources << source unless @sources.include?(source)
+    @sources = item.add_source(source)
   end
 
   def selected_option(options)
@@ -89,7 +96,7 @@ class App
     when '2'
       puts list_all_music_albums
     when '3'
-      puts 'List all movies'
+      puts list_movies
     when '4'
       puts 'List all games'
     when '5'
@@ -97,7 +104,7 @@ class App
     when '6'
       puts list_labels
     when '7'
-      puts 'List all sources'
+      puts list_sources
     when '8'
       puts 'List all authors'
     when '9'

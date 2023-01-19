@@ -1,6 +1,8 @@
 require 'date'
+require_relative '../modules/handle_source'
 
 class Item
+  include HandleSource
   attr_reader :genre, :label, :author, :source, :archived, :publish_date, :id
 
   def initialize(publish_date)
@@ -22,6 +24,7 @@ class Item
   def add_source(source)
     @source = source
     source.items << self unless source.items.include?(self)
+    save_new_source(@source)
   end
 
   def add_label(label)

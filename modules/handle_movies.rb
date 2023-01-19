@@ -1,6 +1,5 @@
 require './classes/movie'
 require 'json'
-
 module HandleMovie
   def list_movies
     puts 'No movies available' if @movies.empty?
@@ -31,7 +30,9 @@ module HandleMovie
   end
 
   def load_movies
-    
+    if File.exist?('./json/movies.json')
+      movies = File.open('./json/movies.json')
+      data = movies.read
       data.empty? ? [] : JSON.parse(data)
     else
       File.write('./json/movies.json', [])

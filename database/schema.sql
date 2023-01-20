@@ -13,12 +13,27 @@ CREATE TABLE source (
     name VARCHAR(255)
 );
 
--- Create Author Table
 CREATE TABLE authors (
   id INT GENERATED ALWAYS AS IDENTITY,
-  FOREIGN KEY (source_id) REFERENCES sources(id),
+  first_name VARCHAR(30),
+  second_name VARCHAR(30),
+  PRIMARY KEY(id),
+  );
+
+CREATE TABLE games (
+  id INT GENERATED ALWAYS AS IDENTITY,
+  archived BOOLEAN,
+  multiplayer BOOLEAN,
+  last_played_at DATE,
+  label_id INT, 
+  genre_id INT, 
+  source_id INT,
+  author_id INT,
+  PRIMARY KEY(id),
   FOREIGN KEY (author_id) REFERENCES authors(id),
   FOREIGN KEY (label_id) REFERENCES labels(id),
+  FOREIGN KEY (source_id) REFERENCES sources(id),
+  FOREIGN KEY (genre_id) REFERENCES genres(id),
 );
 
 CREATE TABLE genres (

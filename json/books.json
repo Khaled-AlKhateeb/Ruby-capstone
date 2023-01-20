@@ -22,5 +22,29 @@
       "id": 664,
       "name": "The Library"
     }
+  },
+  {
+    "id": 793,
+    "publish_date": "1996-05-19",
+    "publisher": "Richard A. Kanaak",
+    "cover_state": "good",
+    "label": {
+      "id": 508,
+      "title": "Day of the Dragon",
+      "color": "Orange"
+    },
+    "genre": {
+      "id": 996,
+      "name": "Fiction History"
+    },
+    "author": {
+      "id": 939,
+      "first_name": "Richard",
+      "last_name": "Kanaak"
+    },
+    "source": {
+      "id": 195,
+      "name": "Warcraft"
+    }
   }
 ]

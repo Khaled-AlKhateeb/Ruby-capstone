@@ -1,18 +1,34 @@
 [
-    {
-      "id": 302,
-      "name": "DNA"
-    },
-    {
-      "id": 722,
-      "name": "Seven Eleven"
-    },
-    {
-      "id": 688,
-      "name": "Safeway"
-    },
-    {
-      "id": 422,
-      "name": "RadioShack"
-    }
+  {
+    "id": 302,
+    "name": "DNA"
+  },
+  {
+    "id": 722,
+    "name": "Seven Eleven"
+  },
+  {
+    "id": 688,
+    "name": "Safeway"
+  },
+  {
+    "id": 422,
+    "name": "RadioShack"
+  },
+  {
+    "id": 195,
+    "name": "Warcraft"
+  },
+  {
+    "id": 214,
+    "name": "Cassette"
+  },
+  {
+    "id": 105,
+    "name": "TV"
+  },
+  {
+    "id": 79,
+    "name": "Google"
+  }
 ]

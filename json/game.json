@@ -1,0 +1,57 @@
+[
+  {
+    "last_played_at": "2021",
+    "publish_date": "2018",
+    "multiplayer?": true
+  },
+  {
+    "last_played_at": "2017",
+    "publish_date": "2004",
+    "multiplayer": true
+  },
+  {
+    "last_played_at": "2016",
+    "publish_date": "2007",
+    "multiplayer": true
+  },
+  {
+    "last_played_at": "2023",
+    "publish_date": "2011",
+    "multiplayer": true
+  },
+  {
+    "last_played_at": "2022",
+    "publish_date": "2001",
+    "multiplayer": true
+  },
+  {
+    "last_played_at": "2014",
+    "publish_date": "2007",
+    "multiplayer": false
+  },
+  {
+    "last_played_at": "2005",
+    "publish_date": "1985",
+    "multiplayer": false
+  },
+  {
+    "last_played_at": "2014",
+    "publish_date": "2009",
+    "multiplayer": true
+  },
+  {
+    "last_played_at": "2023",
+    "publish_date": "2008",
+    "multiplayer": true
+  },
+  {
+    "last_played_at": "2012",
+    "publish_date": "1999",
+    "multiplayer": false
+  },
+  {
+    "last_played_at": "2020",
+    "publish_date": "2001",
+    "multiplayer": false
+  }
+]

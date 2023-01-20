@@ -61,8 +61,8 @@ class App
   end
 
   def create_an_item(item)
-    label_title = user_input("Enter item label title (e.g. 'Gift', 'New'): ")
-    label_color = user_input('Enter item label color: ')
+    label_title = user_input('Enter item label title (e.g. "Gift", "New"): ')
+    label_color = user_input('Enter item label color: ')
 
     author_first_name = user_input('Author first name: ')
     author_last_name = user_input('Author last name: ')
@@ -71,7 +71,6 @@ class App
 
     sourcer_name = user_input("Item source (e.g. 'Wikipedia', 'Google'): ")
 
-    # Creat the needed classes
     label = Label.new(label_title, label_color)
     item.add_label(label)
     @curr_labels << label unless @curr_labels.include?(label)
@@ -98,7 +97,7 @@ class App
     when '3'
       puts list_movies
     when '4'
-      puts 'List all games'
+      puts list_games
     when '5'
       puts list_all_genre
     when '6'
@@ -106,7 +105,7 @@ class App
     when '7'
       puts list_sources
     when '8'
-      puts 'List all authors'
+      puts list_author
     when '9'
       add_book
     when '10'

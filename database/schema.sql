@@ -1,11 +1,32 @@
--- genre Table
+CREATE TABLE movie (
+    id SERIAL PRIMARY KEY,
+    genre_id INTEGER REFERENCES genre(id),
+    author_id INTEGER REFERENCES author(id),
+    source_id INTEGER REFERENCES source(id),
+    label_id INTEGER REFERENCES label(id),
+    publish_date DATE,
+    archived BOOLEAN
+);
+
+CREATE TABLE source (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255)
+);
+
+-- Create Author Table
+CREATE TABLE authors (
+  id INT GENERATED ALWAYS AS IDENTITY,
+  FOREIGN KEY (source_id) REFERENCES sources(id),
+  FOREIGN KEY (author_id) REFERENCES authors(id),
+  FOREIGN KEY (label_id) REFERENCES labels(id),
+);
+
 CREATE TABLE genres (
     id INT NOT NULL GENERATED ALWAYS AS IDENTITY,
     name VARCHAR(150),
     PRIMARY KEY (id)
 );
 
--- Music-Album table
 CREATE TABLE music_albums (
     id INT NOT NULL GENERATED ALWAYS AS IDENTITY,
     publish_date DATE,
@@ -37,7 +58,6 @@ CREATE TABLE music_albums (
             REFERENCES  label(id)
 );
 
--- Label Table
 CREATE TABLE labels (
   id SERIAL NOT NULL,
   title VARCHAR(250) NOT NULL, 
@@ -45,7 +65,6 @@ CREATE TABLE labels (
   PRIMARY KEY (id)
 )
 
--- Books Table
 CREATE TABLE books (
   id SERIAL NOT NULL,
   publish_date DATE NOT NULL,
